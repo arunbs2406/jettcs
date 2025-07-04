@@ -18,8 +18,9 @@ changed as (
         o_clerk as clerk_name,
  
         -- numbers
-        o_totalprice as total_price,
- 
+        o_totalprice{{money()}} as total_price,
+        {{dol_eur('o_totalprice', 3)}} as total_price_euro,
+        {{dol_ind('o_totalprice', 3)}} as total_price_inr,
         -- statuses
         o_orderstatus as status_code,
         o_orderpriority as priority_code,
