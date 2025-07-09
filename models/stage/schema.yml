@@ -19,6 +19,9 @@ models:
         description: phone number of the customer
       - name: account_balance
         description: total account balance from the customer
+        tests:
+          - lesservalues:
+              pk_name: customer_id
       - name: market_segment
         description: market segment of the customer
       - name: comment

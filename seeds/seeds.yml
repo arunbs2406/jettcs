@@ -1,0 +1,7 @@
+version: 2
+
+seeds:
+  - name: supplier_names
+    description: supplier data
+    config:
+      <seed_config>: <config_value>
